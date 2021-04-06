@@ -4,7 +4,7 @@ const about = () => {
     return (
         <div>
             <h3> about me </h3>
-            <small> raymeund still gaey </small>
+            <small> my name is parker graham </small>
         </div>
     );
 };
