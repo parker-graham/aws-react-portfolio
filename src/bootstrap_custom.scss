@@ -1,0 +1,10 @@
+// Override default variables before the import
+$body-bg: #E5E5E5;
+
+.navbar-brand {
+    font-family: "oxygenbold";
+    color: #707070;
+}
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';

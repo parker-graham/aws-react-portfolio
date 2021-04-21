@@ -1,27 +1,71 @@
 //Dropdown.js
 import React, { useRef, useState } from "react";
 import './dropdown.scss';
-import pdf from '../files/ParkerGraham_Resume.pdf';
 
 import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom";
+// import { useDetectOutsideClick } from "./useDetectOutsideClick";
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { LinkContainer } from "react-router-bootstrap";
+import { CSSTransition } from 'react-transition-group';
 
 const DropdownMenu = () => {
+
+  const [open, setOpen] = useState(false);
+  const [activeMenu, setActiveMenu] = useState('main');
   return (
-    <div className="menu-container" >
-      <Link className="title" to="/">Title Text</Link>
-      <nav className="navigation" id="navbar"> 
-        <Link className="menu-trigger" to="/projects">projects</Link>
-        <ul className="menu">
-          <Link className="dropdownLink" to="/project1">project1</Link> <hr className='solid'></hr>
-          <Link className="dropdownLink" to="/project2">project2</Link> <hr className='solid'></hr>
-          <Link className="dropdownLink" to="/project3">project3</Link>
-        </ul>
-        <p className="navList">/</p>
-        <Link className="navList1" to="/resume">résumé</Link>
-        <p className="navList">/</p>
-        <Link className="navList2" to="/about">about me</Link>
-      </nav>
+    <Navbar className="navbar navbar-custom" variant="dark" expand="lg" fixed="top">
+    <div className="topnav align-items-center">
+      <LinkContainer to="/">
+        <Navbar.Brand className="title align-self-center">PG's Homepage</Navbar.Brand>
+      </LinkContainer>
+
+      <Navbar.Toggle className="float-right align-self-middle align-content-center" aria-controls="basic-navbar-nav"/>
     </div>
+      <Navbar.Collapse className="text-right justify-content-end mw-50">
+
+        <Nav className="float-right">
+
+          <LinkContainer className="mx-1" to="/about">
+            <Nav.Link>about me</Nav.Link>
+          </LinkContainer>
+          
+          <a className="" id="sep"> / </a>
+          
+          <LinkContainer className="mx-1" to="/resume">
+            <Nav.Link>résumé</Nav.Link>
+          </LinkContainer>
+
+          <a className="" id="sep"> / </a>
+          
+          <NavDropdown className="mx-1" title="projects" id="nav-dropdown">
+
+            
+              <LinkContainer to="/project1">
+                <NavDropdown.Item>portfolio website</NavDropdown.Item>
+              </LinkContainer>
+              
+              <NavDropdown.Divider />
+
+              <LinkContainer to="/project2">
+              <NavDropdown.Item href="/project2">senior design - aws iot</NavDropdown.Item>
+              </LinkContainer>
+
+              <NavDropdown.Divider />
+
+              <LinkContainer to="/project3">
+              <NavDropdown.Item>eating the quadrapatty</NavDropdown.Item>
+              </LinkContainer>
+
+              <NavDropdown.Divider />
+
+              <NavDropdown.Item href="action/3.4">ooo way ouu</NavDropdown.Item>
+
+          </NavDropdown>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 };
 
