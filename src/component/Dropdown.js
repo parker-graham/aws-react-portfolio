@@ -2,12 +2,12 @@
 import React, { useRef, useState } from "react";
 import './dropdown.scss';
 
-import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom";
 // import { useDetectOutsideClick } from "./useDetectOutsideClick";
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { LinkContainer } from "react-router-bootstrap";
+import { LinkContainer } from 'react-router-bootstrap'
 import { CSSTransition } from 'react-transition-group';
 
 const DropdownMenu = () => {
