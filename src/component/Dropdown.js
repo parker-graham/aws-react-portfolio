@@ -34,7 +34,7 @@ const DropdownMenu = () => {
           <a className="" id="sep"> / </a>
           
           <LinkContainer className="mx-1" to="/resume">
-            <Nav.Link>résumé</Nav.Link>
+            <Nav.Link className="nav-link">résumé</Nav.Link>
           </LinkContainer>
 
           <a className="" id="sep"> / </a>
