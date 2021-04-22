@@ -60,7 +60,9 @@ const DropdownMenu = () => {
 
               <NavDropdown.Divider />
 
-              <NavDropdown.Item href="action/3.4">ooo way ouu</NavDropdown.Item>
+              <LinkContainer to="/project4">
+              <NavDropdown.Item>ooo way ouu</NavDropdown.Item>
+              </LinkContainer>
 
           </NavDropdown>
         </Nav>

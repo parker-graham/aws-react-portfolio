@@ -1,12 +1,12 @@
 import React from "react";
 
-const project3 = () => {
+const project4 = () => {
     return (
         <div className="body">
-            <h3> project3 </h3>
+            <h3> project4 </h3>
             <small> raymeund still gaey </small>
         </div>
     );
 };
 
-export default project3;
+export default project4;

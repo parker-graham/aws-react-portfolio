@@ -19,6 +19,7 @@ import resume from './pages/resume';
 import project1 from './pages/project1';
 import project2 from './pages/project2';
 import project3 from './pages/project3';
+import project4 from './pages/project4';
 
 export default function App() {
   return (
@@ -33,6 +34,7 @@ export default function App() {
       <Route exact path="/project1" component={project1} />
       <Route exact path="/project2" component={project2} />
       <Route exact path="/project3" component={project3} />
+      <Route exact path="/project4" component={project4} />
       <Redirect to="/404"/>
       </Switch>
     </Router>

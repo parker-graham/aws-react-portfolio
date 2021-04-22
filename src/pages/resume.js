@@ -6,7 +6,7 @@ const resumepage = () => {
     const respdf=process.env.PUBLIC_URL+'/ParkerGraham_Resume.pdf';
 
     return (
-        <div>
+        <div className="body">
             <br></br>
         <DisplayPDF pdf={respdf} />
         <div>ur mommmm</div>
