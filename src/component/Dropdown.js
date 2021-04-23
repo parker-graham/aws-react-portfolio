@@ -12,56 +12,57 @@ import { CSSTransition } from 'react-transition-group';
 
 const DropdownMenu = () => {
 
-  const [open, setOpen] = useState(false);
-  const [activeMenu, setActiveMenu] = useState('main');
+  // Hook for dropdown menu
+  const [expanded, setExpanded] = useState(false);
+
   return (
-    <Navbar className="navbar navbar-custom" variant="dark" expand="lg" fixed="top">
+    <Navbar expanded={expanded} className="navbar navbar-custom" variant="dark" expand="lg" fixed="top">
     <div className="topnav align-items-center">
       <LinkContainer to="/">
-        <Navbar.Brand className="title align-self-center">PG's Homepage</Navbar.Brand>
+        <Navbar.Brand onClick={() => setExpanded(false)} className="title align-self-center">PG's Homepage</Navbar.Brand>
       </LinkContainer>
 
-      <Navbar.Toggle className="float-right align-self-middle align-content-center" aria-controls="basic-navbar-nav"/>
+      <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} className="float-right align-self-middle align-content-center" aria-controls="basic-navbar-nav"/>
     </div>
       <Navbar.Collapse className="text-right justify-content-end mw-50">
 
         <Nav className="float-right">
 
           <LinkContainer className="mx-1" to="/about">
-            <Nav.Link>about me</Nav.Link>
+            <Nav.Link onClick={() => setExpanded(false)}>about me</Nav.Link>
           </LinkContainer>
           
           <a className="" id="sep"> / </a>
           
           <LinkContainer className="mx-1" to="/resume">
-            <Nav.Link className="nav-link">résumé</Nav.Link>
+            <Nav.Link onClick={() => setExpanded(false)} className="nav-link">résumé</Nav.Link>
           </LinkContainer>
 
           <a className="" id="sep"> / </a>
           
-          <NavDropdown className="mx-1" title="projects" id="nav-dropdown">
+          <NavDropdown  className="mx-1" title="projects" id="nav-dropdown">
 
             
               <LinkContainer to="/project1">
-                <NavDropdown.Item>portfolio website</NavDropdown.Item>
+                <NavDropdown.Item onClick={() => setExpanded(false)} >portfolio website</NavDropdown.Item>
               </LinkContainer>
               
               <NavDropdown.Divider />
 
               <LinkContainer to="/project2">
-              <NavDropdown.Item href="/project2">senior design - aws iot</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => setExpanded(false)}>senior design - aws iot</NavDropdown.Item>
               </LinkContainer>
 
               <NavDropdown.Divider />
 
               <LinkContainer to="/project3">
-              <NavDropdown.Item>eating the quadrapatty</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => setExpanded(false)}>eating the quadrapatty</NavDropdown.Item>
               </LinkContainer>
 
               <NavDropdown.Divider />
 
               <LinkContainer to="/project4">
-              <NavDropdown.Item>ooo way ouu</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => setExpanded(false)}>ooo way ouu</NavDropdown.Item>
               </LinkContainer>
 
           </NavDropdown>

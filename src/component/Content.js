@@ -1,6 +1,6 @@
 //Content.js
 import React from 'react';
-import './content.css';
+import './content.scss';
 
 const Content=() => {
   const data=(
