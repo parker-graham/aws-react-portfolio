@@ -1,21 +1,32 @@
 // home.scss
 
 div.body.home {
-    background: url("../files/houston_bg.jpg") no-repeat center center fixed; 
+    background: url("../files/houston_bg.jpg"); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
+    background-color: transparent;
 }
 
 .socialbox {
-    display: block;
+    display: inline-block;
     background-color: #212424;
     border-bottom: 5px solid #707070;
     width: 50%;
     margin: 0% 25%;
     padding: 2% 2%;
+}
+
+.row {
+    justify-content:space-between;
+    width: 50%;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .card {
@@ -36,8 +47,9 @@ hr.homebr {
 }
 
 .blurb {
+    margin:auto;
     background: #212424;
-    margin: 5% 20%;
+    width: 50%;
 }
 
 .inner-border {

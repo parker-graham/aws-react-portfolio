@@ -7,7 +7,7 @@ import './home.scss';
 const homepage = () => {
     return (
         <div className="body home">
-            <div className="blurb inner-border" style={{ textAlign: "center", color: "#E5E5E5"}}>
+            <div className="blurb inner-border mb-5" style={{ textAlign: "center", color: "#E5E5E5"}}>
                 <h1 
                     style={{textAlign: "center", margin: "2%"}}>
                     Hi! I'm Parker Graham
@@ -18,13 +18,13 @@ const homepage = () => {
                 </h2>
             </div>
             <hr className='homebr'></hr>
-            <div className="blurb inner-border" style={{ textAlign: "center", color: "#E5E5E5"}}>
+            <div className="blurb inner-border mt-5" style={{ textAlign: "center", color: "#E5E5E5"}}>
                 <h1
                     style={{textAlign: "center", margin: "2%", color: "#E5E5E5"}}>
                     Learn. Dream. Create.
                 </h1>
             </div>
-            <div className="row" style={{justifyContent:"space-between", margin: "5% 20%"}}>
+            <div className="row">
                 <div className="card w-33 rounded-0">
                     <div className="card-body d-none d-lg-flex" id="homeCard">
                         <h5 className="card-title"></h5>
