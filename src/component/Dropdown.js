@@ -19,7 +19,7 @@ const DropdownMenu = () => {
     <Navbar expanded={expanded} className="navbar navbar-custom" variant="dark" expand="lg" fixed="top">
     <div className="topnav align-items-center">
       <LinkContainer to="/">
-        <Navbar.Brand onClick={() => setExpanded(false)} className="title align-self-center">PG's Homepage</Navbar.Brand>
+        <Navbar.Brand onClick={() => setExpanded(false)} className="title align-self-center">Parker Graham</Navbar.Brand>
       </LinkContainer>
 
       <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} className="float-right align-self-middle align-content-center" aria-controls="basic-navbar-nav"/>
@@ -50,19 +50,19 @@ const DropdownMenu = () => {
               <NavDropdown.Divider />
 
               <LinkContainer to="/project2">
-              <NavDropdown.Item onClick={() => setExpanded(false)}>senior design - aws iot</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => setExpanded(false)}>project 2</NavDropdown.Item>
               </LinkContainer>
 
               <NavDropdown.Divider />
 
               <LinkContainer to="/project3">
-              <NavDropdown.Item onClick={() => setExpanded(false)}>eating the quadrapatty</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => setExpanded(false)}>project 3</NavDropdown.Item>
               </LinkContainer>
 
               <NavDropdown.Divider />
 
               <LinkContainer to="/project4">
-              <NavDropdown.Item onClick={() => setExpanded(false)}>ooo way ouu</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => setExpanded(false)}>project 4</NavDropdown.Item>
               </LinkContainer>
 
           </NavDropdown>

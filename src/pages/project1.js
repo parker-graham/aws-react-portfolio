@@ -1,10 +1,10 @@
 import React from "react";
+import Content from '../component/Content';
 
 const project1 = () => {
     return (
         <div className="body">
-            <h3> project1 </h3>
-            <small> raymeund still gaey </small>
+            <Content></Content>
         </div>
     );
 };

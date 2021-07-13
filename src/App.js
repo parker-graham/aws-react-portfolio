@@ -2,6 +2,7 @@
 import './App.css';
 // import Content from './component/Content';
 import DropdownMenu from './component/Dropdown';
+import Footer from './component/Footer';
 
 import {
   BrowserRouter as Router,
@@ -21,6 +22,7 @@ import project2 from './pages/project2';
 import project3 from './pages/project3';
 import project4 from './pages/project4';
 
+
 export default function App() {
   return (
     <Router>
@@ -37,6 +39,7 @@ export default function App() {
       <Route exact path="/project4" component={project4} />
       <Redirect to="/404"/>
       </Switch>
+      {/*<Footer />*/}
     </Router>
   );
 }

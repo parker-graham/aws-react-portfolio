@@ -1,45 +1,39 @@
 /*content.css*/
 
-.content{
-    width: 100%;
-    margin-top: -1rem;
-    max-width: 100%;
-    box-sizing: border-box;
-    min-height: 100vh;
+nav + div { margin-top: 2%;}
+
+.boxWrapper{
+  width:60%;
+  margin: 0 auto;
 }
 
 hr.contentbr {
     border-top: 3px solid rgb(182, 182, 182);
     width: 50%;
-    margin:2rem 0% 0% 10%;
     margin-top: 5px;
 }
 
 .box{
-    width:80%;
-    margin:5px 20% 10% 10%;
-    height: 400px;
+    padding: 5px 5px 5px 5px;
     background-color:white;
 }
 
-h1 {
+h1.boxHeading {
     font-family: "oxygenbold";
     font-size: 52px;
     letter-spacing: 2px;
-    margin:5px 0% -1% 10%;
 }
 
 p {
     font-family: "oxygenlight";
-    font-size: 16px;
-    letter-spacing: 2px;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 
 .subtitle {
     font-family: "oxygenlight";
-    font-size: 18px;
+    font-size: 24px;
     letter-spacing: 2px;
-    margin:5px 0% 0% 10%;
 }
 
 
@@ -69,6 +63,9 @@ p {
   }
   .dropdown-menu {
     left: -60%;
+  }
+  .boxWrapper {
+    width:60%;
   }
 }
 
@@ -135,5 +132,16 @@ p {
   .dropdown-menu {
     width: 99%;
   }
-  
+  .boxWrapper {
+    width:70%;
+  }
+  h1.boxHeading {
+    font-size: 24px;
+  }
+  h2.subtitle {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
 }
